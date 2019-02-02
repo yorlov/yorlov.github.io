@@ -4,11 +4,28 @@
     <title>Fridayball</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="icon.png"/>
-    <link rel="stylesheet" href="//unpkg.com/@atlaskit/css-reset@3.0.5/dist/bundle.css">
     <style>
         body {
             width: 70%;
             margin-left: 15%;
+            font-size: xx-large;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0 2px;
+        }
+
+        td:not(:first-child) {
+            text-align: center;
+        }
+
+        tr.win {
+            background-color: #36B37E;
+        }
+
+        tr.loss {
+            background-color: #FF5630;
         }
     </style>
 </head>
@@ -23,7 +40,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
+    <tr class="win">
         <td>
             4 января
         </td>
@@ -34,7 +51,7 @@
             1
         </td>
     </tr>
-    <tr>
+    <tr class="win">
         <td>
             11 января
         </td>
@@ -45,7 +62,7 @@
             2
         </td>
     </tr>
-    <tr>
+    <tr class="win">
         <td>
             18 января
         </td>
@@ -56,7 +73,7 @@
             1
         </td>
     </tr>
-    <tr>
+    <tr class="loss">
         <td>
             25 января
         </td>
@@ -67,7 +84,7 @@
             3
         </td>
     </tr>
-    <tr>
+    <tr class="loss">
         <td>
             1 февраля
         </td>
